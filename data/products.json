@@ -1,0 +1,19 @@
+{
+    "products": [
+        {
+            "sku": "item0001",
+            "name": "730",
+            "price": 530
+        },
+        {
+            "sku": "item0002",
+            "name": "760",
+            "price": 630
+        },
+        {
+            "sku": "item0003",
+            "name": "790",
+            "price": 930
+        }
+    ]
+}

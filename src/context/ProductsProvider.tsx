@@ -6,6 +6,7 @@ export type ProductType = {
     price: number,
 }
 
+// products should be fetched from a data source
 const initState: ProductType[] = [
     {
         "sku": "item0001",
@@ -33,7 +34,7 @@ export const ProductsContext = createContext<UseProductsContextType>(InitContext
 type ChildrenType = { children?: ReactElement | ReactElement[] }
 
 export const ProductsProvider = ({ children }: ChildrenType): ReactElement => {
-    const [products, setProducts] = useState<ProductType[]>(initState)
+    const [products, _setProducts] = useState<ProductType[]>(initState)
     return (
         <ProductsContext.Provider value={{ products }}>
             {children}
